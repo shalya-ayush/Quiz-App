@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Play Quiz</title>
+  </head>
+
+  <body>
+    <header>
+      <p id="time">Time:</p>
+    </header>
+    <main>
+      <!-- Quiz Container -->
+      <div id="quiz-container">
+        <h1>Coding Quiz Challenge!</h1>
+        <p>
+          Try to answer the following code related questions within the time
+          limit.
+        </p>
+        <p>
+          Keep in mind that wrong anwer will penalize your score/time by ten
+          seconds
+        </p>
+        <button onclick="startQuiz()">Start Quiz</button>
+      </div>
+      <!-- Questions -->
+      <div id="questions">
+        <h3 id="question">Questions...</h3>
+        <ol class="options">
+          <li class="option" id="option1" onclick="calcScore(this)">1</li>
+          <li class="option" id="option2" onclick="calcScore(this)">2</li>
+          <li class="option" id="option3" onclick="calcScore(this)">3</li>
+          <li class="option" id="option4" onclick="calcScore(this)">4</li>
+        </ol>
+      </div>
+      <!-- Score Board -->
+
+      <div id="score-board">
+        <h2>Your Score:</h2>
+        <div class="score-card">
+          <h2 id="score">0</h2>
+          
+        </div>
+
+        
+      </div>
+    </main>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
